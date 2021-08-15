@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.07</doclet-version-NOT-library-version>
+    <class>
+        <name>ir.tapsell.plus.b4a.TapsellPlusB4A</name>
+        <shortname>TapsellPlus</shortname>
+        <owner>activity</owner>
+        <event>TapsellPlus_OnOpened (responseId As String)</event>
+        <event>TapsellPlus_OnClosed (responseId As String)</event>
+        <event>TapsellPlus_OnRewarded (responseId As String)</event>
+        <event>TapsellPlus_OnResponse (responseId As String)</event>
+        <event>TapsellPlus_OnError (error As String)</event>
+        <method>
+            <name>DestroyNativeAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>responseId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetGDPRConsent</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>consent</name>
+                <type>boolean</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestRewardedVideoAd</name>
+            <comment>Request a rewarded ad</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ShowStandardBannerAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>responseId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>container</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ShowNativeAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>responseId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>adHolder</name>
+                <type>ir.tapsell.plus.AdHolder</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ShowRewardedVideo</name>
+            <comment>Show the ad. Remember. Request one first. Then use it's responseId answer</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>responseId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestAndShowInterstitialAd</name>
+            <comment>Request an interstitial ad and then immediately show it
+zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestAndShowNativeAd</name>
+            <comment>Shows a native ad inside the app's main screen.
+ &lt;b&gt;NOTE: It uses default template and custom template is not supported in B4A&lt;/b&gt;
+zoneId: is the ID of native ad in tapsell plus dashboard
+container: is the panel view group you make in designer for this ad.
+                  It should be 3/4 of the screen</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>container</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetDebugMode</name>
+            <comment>To see more logs set this to 3</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>logLevel</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestAndShowStandardBanner</name>
+            <comment>Request an interstitial ad and then immediately show it
+zoneId: is the zone Id needed (get it from Tapsell plus dashboard)
+bannerType: is the type of banner to be shown. It mostly cares about the size
+panel: is an empty view container to show the ad on.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>bannerType</name>
+                <type EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</type>
+            </parameter>
+            <parameter>
+                <name>panel</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize tapsell - This is needed to be called first
+appId: is achieved from tapsell plus dashboard when you create the app</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>appId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ShowInterstitialAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>responseId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>DestroyStandardBannerAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>responseId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>container</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>InitializeWithEventPrefix</name>
+            <comment>Initialize tapsell - This is needed to be called first
+appId: is achieved from tapsell plus dashboard when you create the app
+eventPrefix: is the prefix name of events in b4a - default is TapsellPlus
+ 
+ You can also call &lt;code&gt;tapsellPlus.Initialize(appId)&lt;/code&gt; which is better</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>appId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>eventPrefix</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>NativeAdClicked</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>responseId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>HideStandardBanner</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>DisplayStandardBanner</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>RequestInterstitialAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestNativeAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestStandardBannerAd</name>
+            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>bannerType</name>
+                <type EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestAndShowNativeVideoAd</name>
+            <comment>Shows a native video ad inside the app's main screen.
+ &lt;b&gt;NOTE: It uses default template and custom template is not supported in B4A&lt;/b&gt;
+zoneId: is the ID of native video ad in tapsell plus dashboard
+container: is the panel view group you make in designer for this ad.
+                  It should be 3/4 of the screen</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>container</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+            <parameter>
+                <name>autoStartVideo</name>
+                <type>boolean</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RequestAndShowRewardedVideoAd</name>
+            <comment>Request an rewarded ad and then immediately show it
+zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>zoneId</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <field>
+            <name>BANNER_250x250</name>
+            <comment></comment>
+            <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
+        </field>
+        <field>
+            <name>BANNER_320x100</name>
+            <comment></comment>
+            <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
+        </field>
+        <field>
+            <name>BANNER_320x50</name>
+            <comment>Simple wrapper to native {@link TapsellPlusBannerType}
+ Used when requesting for a standard banner</comment>
+            <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
+        </field>
+        <field>
+            <name>BANNER_468x60</name>
+            <comment></comment>
+            <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
+        </field>
+        <field>
+            <name>BANNER_160x600</name>
+            <comment></comment>
+            <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
+        </field>
+        <field>
+            <name>BANNER_300x250</name>
+            <comment></comment>
+            <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
+        </field>
+        <field>
+            <name>BANNER_728x90</name>
+            <comment></comment>
+            <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
+        </field>
+    </class>
+    <version>2.001004</version>
+    <author>Mahdi Malvandi (TapsellTechnical)</author>
+    <dependsOn>glide-4.12.0.aar</dependsOn>
+    <dependsOn>glide-annotations-4.12.0.jar</dependsOn>
+    <dependsOn>glide-disklrucache-4.12.0.jar</dependsOn>
+    <dependsOn>glide-gifdecoder-4.12.0.aar</dependsOn>
+    <dependsOn>glide-okhttp3-integration-4.11.0.aar</dependsOn>
+    <dependsOn>gson-2.8.5.jar</dependsOn>
+    <dependsOn>okhttp-logging-interceptor-3.12.13.jar</dependsOn>
+    <dependsOn>retrofit-2.6.4.jar</dependsOn>
+    <dependsOn>retrofit-converter-gson-2.6.4.jar</dependsOn>
+    <dependsOn>tapsell-plus-sdk-b4a-2.1.3.aar</dependsOn>
+    <dependsOn>tapsell-sdk-android-4.7.2.aar</dependsOn>
+    <dependsOn>com.google.android.gms:play-services-ads-identifier</dependsOn>
+    <dependsOn>com.google.android.gms:play-services-ads</dependsOn>
+    <dependsOn>androidx.vectordrawable:vectordrawable-animated</dependsOn>
+    <dependsOn>androidx.exifinterface:exifinterface</dependsOn>
+    <dependsOn>OkHttp</dependsOn>
+</root>
