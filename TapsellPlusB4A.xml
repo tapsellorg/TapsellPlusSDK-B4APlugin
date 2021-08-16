@@ -268,38 +268,44 @@ zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
         </method>
         <field>
             <name>BANNER_250x250</name>
-            <comment></comment>
+            <comment>Used when requesting for a standard banner
+ Supported by Tapsell only</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
         <field>
             <name>BANNER_320x100</name>
-            <comment></comment>
+            <comment>Used when requesting for a standard banner
+ Supported by Tapsell, AdMob</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
         <field>
             <name>BANNER_320x50</name>
-            <comment>Simple wrapper to native {@link TapsellPlusBannerType}
- Used when requesting for a standard banner</comment>
+            <comment>Used when requesting for a standard banner
+ Supported by Tapsell, AdMob, AppLovin, UnityAds, AdColony</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
         <field>
             <name>BANNER_468x60</name>
-            <comment></comment>
+            <comment>Used when requesting for a standard banner
+ Supported by AdMob, UnityAds</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
         <field>
             <name>BANNER_160x600</name>
-            <comment></comment>
+            <comment>Used when requesting for a standard banner
+ Supported by AdColony only</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
         <field>
             <name>BANNER_300x250</name>
-            <comment></comment>
+            <comment>Used when requesting for a standard banner
+ Supported by Tapsell, AdMob, AppLovin, AdColony</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
         <field>
             <name>BANNER_728x90</name>
-            <comment></comment>
+            <comment>Used when requesting for a standard banner
+ Supported by AdMob, AppLovin, UnityAds, AdColony</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
     </class>
