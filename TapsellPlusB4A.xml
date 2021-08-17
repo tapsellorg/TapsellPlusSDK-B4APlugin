@@ -5,6 +5,7 @@
         <name>ir.tapsell.plus.b4a.TapsellPlusB4A</name>
         <shortname>TapsellPlus</shortname>
         <owner>activity</owner>
+        <event>TapsellPlus_OnSuccess</event>
         <event>TapsellPlus_OnOpened (responseId As String)</event>
         <event>TapsellPlus_OnClosed (responseId As String)</event>
         <event>TapsellPlus_OnRewarded (responseId As String)</event>
@@ -12,7 +13,9 @@
         <event>TapsellPlus_OnError (error As String)</event>
         <method>
             <name>DestroyNativeAd</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <comment>Destroys a native ad
+
+ &lt;b&gt;Do NOT pass ZONE_Id to this method&lt;/b&gt;</comment>
             <returntype>void</returntype>
             <parameter>
                 <name>responseId</name>
@@ -30,7 +33,9 @@
         </method>
         <method>
             <name>RequestRewardedVideoAd</name>
-            <comment>Request a rewarded ad</comment>
+            <comment>Request a rewarded ad
+
+ &lt;b&gt;Note&lt;/b&gt; Prefer to use RequestAndShow methods instead</comment>
             <returntype>void</returntype>
             <parameter>
                 <name>zoneId</name>
@@ -39,7 +44,11 @@
         </method>
         <method>
             <name>ShowStandardBannerAd</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <comment>Shows the requested standard banner
+
+ &lt;b&gt;Do NOT pass ZONE_Id to this method&lt;/b&gt;
+
+ &lt;b&gt;Note&lt;/b&gt; Prefer to use RequestAndShow methods instead</comment>
             <returntype>void</returntype>
             <parameter>
                 <name>responseId</name>
@@ -144,7 +153,12 @@ appId: is achieved from tapsell plus dashboard when you create the app</comment>
         </method>
         <method>
             <name>ShowInterstitialAd</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <comment>Shows the requested interstitial method.
+responseId: is the ID you get from calling Request method
+
+ &lt;b&gt;Do NOT pass ZONE_Id to this method&lt;/b&gt;
+
+ &lt;b&gt;Note&lt;/b&gt; Prefer to use RequestAndShow methods instead</comment>
             <returntype>void</returntype>
             <parameter>
                 <name>responseId</name>
@@ -153,7 +167,9 @@ appId: is achieved from tapsell plus dashboard when you create the app</comment>
         </method>
         <method>
             <name>DestroyStandardBannerAd</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <comment>Destroys a standard banner
+responseId: is the ID returned in `OnResponse` from requesting an ad - Must be StandardBanner
+container: the panel assigned to show (or requestAndShow) method</comment>
             <returntype>void</returntype>
             <parameter>
                 <name>responseId</name>
@@ -187,7 +203,9 @@ eventPrefix: is the prefix name of events in b4a - default is TapsellPlus
         </method>
         <method>
             <name>NativeAdClicked</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <comment>Used when a native ad is clicked
+
+ &lt;b&gt;Since you use adHolder, this is mostly useless&lt;/b&gt;</comment>
             <returntype>void</returntype>
             <parameter>
                 <name>responseId</name>
@@ -195,18 +213,10 @@ eventPrefix: is the prefix name of events in b4a - default is TapsellPlus
             </parameter>
         </method>
         <method>
-            <name>HideStandardBanner</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
-            <returntype>void</returntype>
-        </method>
-        <method>
-            <name>DisplayStandardBanner</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
-            <returntype>void</returntype>
-        </method>
-        <method>
             <name>RequestInterstitialAd</name>
-            <comment>No comments provided - Visit docs.tapsell.ir for information</comment>
+            <comment>Requests an Interstitial ad
+
+ &lt;b&gt;Note&lt;/b&gt; Prefer to use RequestAndShow methods instead</comment>
             <returntype>void</returntype>
             <parameter>
                 <name>zoneId</name>
