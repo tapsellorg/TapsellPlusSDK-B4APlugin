@@ -319,7 +319,7 @@ zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
     </class>
-    <version>2.001004</version>
+    <version>2.13</version>
     <author>Mahdi Malvandi (TapsellTechnical)</author>
     <dependsOn>glide-4.12.0.aar</dependsOn>
     <dependsOn>glide-annotations-4.12.0.jar</dependsOn>
