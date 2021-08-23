@@ -1,9 +1,4 @@
-# Public Changelog
-> **NOTE** Do not touch the format:  
-> Version must be tagged with `##`  
-> Use this changelog file to expose it for developers
-
-
+# Changelog
 ## v2.1.3
 - Initialize release
 - Basic implementation of native tapsell-plus SDK
