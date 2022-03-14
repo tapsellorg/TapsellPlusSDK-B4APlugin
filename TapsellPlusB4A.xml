@@ -6,10 +6,10 @@
         <shortname>TapsellPlus</shortname>
         <owner>activity</owner>
         <event>TapsellPlus_OnSuccess</event>
-        <event>TapsellPlus_OnOpened (responseId As String)</event>
-        <event>TapsellPlus_OnClosed (responseId As String)</event>
-        <event>TapsellPlus_OnRewarded (responseId As String)</event>
-        <event>TapsellPlus_OnResponse (responseId As String)</event>
+        <event>TapsellPlus_OnOpened (zoneId As String, responseId As String)</event>
+        <event>TapsellPlus_OnClosed (zoneId As String, responseId As String)</event>
+        <event>TapsellPlus_OnRewarded (zoneId As String, responseId As String)</event>
+        <event>TapsellPlus_OnResponse (zoneId As String, responseId As String)</event>
         <event>TapsellPlus_OnError (error As String)</event>
         <method>
             <name>DestroyNativeAd</name>
@@ -319,8 +319,8 @@ zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
     </class>
-    <version>2.13</version>
-    <author>Mahdi Malvandi (TapsellTechnical)</author>
+    <version>2.14</version>
+    <author>TapsellTechnical</author>
     <dependsOn>glide-4.12.0.aar</dependsOn>
     <dependsOn>glide-annotations-4.12.0.jar</dependsOn>
     <dependsOn>glide-disklrucache-4.12.0.jar</dependsOn>
@@ -330,7 +330,7 @@ zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
     <dependsOn>okhttp-logging-interceptor-3.12.13.jar</dependsOn>
     <dependsOn>retrofit-2.6.4.jar</dependsOn>
     <dependsOn>retrofit-converter-gson-2.6.4.jar</dependsOn>
-    <dependsOn>tapsell-plus-sdk-b4a-2.1.3.aar</dependsOn>
+    <dependsOn>tapsell-plus-sdk-b4a-2.1.4.aar</dependsOn>
     <dependsOn>tapsell-sdk-android-4.7.2.aar</dependsOn>
     <dependsOn>com.google.android.gms:play-services-ads-identifier</dependsOn>
     <dependsOn>com.google.android.gms:play-services-ads</dependsOn>
