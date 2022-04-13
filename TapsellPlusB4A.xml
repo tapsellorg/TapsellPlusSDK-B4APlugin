@@ -319,7 +319,7 @@ zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
             <returntype EnumType="true">ir.tapsell.plus.TapsellPlusBannerType</returntype>
         </field>
     </class>
-    <version>2.14</version>
+    <version>2.17</version>
     <author>TapsellTechnical</author>
     <dependsOn>glide-4.12.0.aar</dependsOn>
     <dependsOn>glide-annotations-4.12.0.jar</dependsOn>
@@ -330,10 +330,12 @@ zoneId: is the zone Id needed (get it from Tapsell plus dashboard)</comment>
     <dependsOn>okhttp-logging-interceptor-3.12.13.jar</dependsOn>
     <dependsOn>retrofit-2.6.4.jar</dependsOn>
     <dependsOn>retrofit-converter-gson-2.6.4.jar</dependsOn>
-    <dependsOn>tapsell-plus-sdk-b4a-2.1.4.aar</dependsOn>
-    <dependsOn>tapsell-sdk-android-4.7.2.aar</dependsOn>
+    <dependsOn>tapsell-plus-sdk-b4a-2.1.7.aar</dependsOn>
+    <dependsOn>tapsell-sdk-android-4.7.4.aar</dependsOn>
+    <dependsOn>play-services-appset-16.0.2.aar</dependsOn>
     <dependsOn>com.google.android.gms:play-services-ads-identifier</dependsOn>
     <dependsOn>com.google.android.gms:play-services-ads</dependsOn>
+    <dependsOn>com.google.android.gms:play-services-auth</dependsOn>
     <dependsOn>androidx.vectordrawable:vectordrawable-animated</dependsOn>
     <dependsOn>androidx.exifinterface:exifinterface</dependsOn>
     <dependsOn>OkHttp</dependsOn>
