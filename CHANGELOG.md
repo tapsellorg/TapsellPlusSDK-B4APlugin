@@ -1,5 +1,19 @@
 # Changelog
 
+## v2.2.0
+- Fix Google Play Console error related to collecting user-installed applications
+- Update `targetSDKVersion` to 33
+- Update `minSdkVersion` to `19`
+- Update B4A.exe version to `12.5`
+- Update tapsell plus native to `2.2.0`
+- Update `tapsell` ad network to `4.7.9`
+- Update `adcolony` ad network to `4.8.0`
+- Update `applovin` ad network to `11.8.2`
+- Update `unity-ads` ad network to `4.6.1`
+- Update `admob` ad network to `21.5.0`
+- Add support for `mintegral` ad network `16.3.91`
+- Update tapsell plus native to `2.2.0`
+
 ## v2.1.7
 - Update targetSDK to 31
 - Update `tapsell` ad network to `4.7.4`
